@@ -11,8 +11,8 @@
 ;; Shape parameters ;;
 ;;;;;;;;;;;;;;;;;;;;;;
 
-(def nrows 4)
-(def ncols 6)
+(def nrows 5)
+(def ncols 7)
 
 (def column-curvature (deg2rad 17))                         ; 15                        ; curvature of the columns
 (def row-curvature (deg2rad 6))                             ; 5                   ; curvature of the rows
@@ -31,7 +31,7 @@
 
 (def keyboard-z-offset 7)                                   ; controls overall height; original=9 with centercol=3; use 16 for centercol=2
 (def bottom-height 2)                                    ; plexiglass plate or printed plate
-(def extra-width 3)                                       ; extra space between the base of keys; original= 2
+(def extra-width 2)                                       ; extra space between the base of keys; original= 2
 (def extra-height -0.5)                                      ; original= 0.5
 
 (def wall-z-offset -1)                                      ; -5                ; original=-15 length of the first downward-sloping part of the wall (negative)
@@ -41,7 +41,7 @@
 
 ; If you use Cherry MX or Gateron switches, this can be turned on.
 ; If you use other switches such as Kailh, you should set this as false
-(def create-side-nubs? false)
+(def create-side-nubs? true)
 
 ;;;;;;;;;;;;;;;;;;;;;;;
 ;; General variables ;;
@@ -55,7 +55,7 @@
 ;; Switch Hole ;;
 ;;;;;;;;;;;;;;;;;
 
-(def keyswitch-height 14)                                   ;; Was 14.1, then 14.25
+(def keyswitch-height 14)          ;; default for this was 14                         ;; Was 14.1, then 14.25
 (def keyswitch-width 14)
 (def plate-thickness 2)
 (def keyswitch-below-plate (- 8 plate-thickness))           ; approx space needed below keyswitch
@@ -332,9 +332,14 @@
 
 ; convexer
 (defn thumb-r-place [shape] (thumb-place [14 -40 10] [-15 -10 5] shape)) ; right
-(defn thumb-m-place [shape] (thumb-place [10 -23 20] [-33 -15 -6] shape)) ; middle
-(defn thumb-l-place [shape] (thumb-place [6 -5 35] [-52.5 -25.5 -11.5] shape)) ; left
-
+(defn thumb-m-place [shape] (thumb-place [10 -23 18] [-33 -14.6 -6] shape)) ; middle
+(defn thumb-l-place [shape] (thumb-place [6 -5 23] [-52.5 -22.3 -11] shape)) ; left
+;;
+;;
+;; OLD convexer
+;;(defn thumb-r-place [shape] (thumb-place [14 -40 10] [-15 -10 5] shape)) ; right
+;;(defn thumb-m-place [shape] (thumb-place [10 -23 20] [-33 -15 -6] shape)) ; middle
+;;(defn thumb-l-place [shape] (thumb-place [6 -5 35] [-52.5 -25.5 -11.5] shape)) ; left
 (defn thumb-layout [shape]
   (union
     (thumb-r-place shape)
@@ -584,7 +589,7 @@
 ;
 (spit "things/right.scad"
       (write-scad model-right))
-;
+;f
 ;(spit "things/left.scad"
 ;      (write-scad (mirror [-1 0 0] model-right)))
 (spit "things/test.scad"
@@ -679,4 +684,3 @@
                          bottom-wall-usb-holder
                          thumb-space-below
                          (screw-insert-all-shapes 1 1 50)))))))
-

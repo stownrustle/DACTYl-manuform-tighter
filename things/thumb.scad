@@ -15,18 +15,6 @@ difference () {
                       translate ([7.75, 0, 1]) {
                         cube ([1.5, 17, 2], center=true);
                       }
-                      translate ([0, 0, -2]) {
-                        hull () {
-                          translate ([7.75, 0, 2]) {
-                            cube ([1.5, 2.75, 4], center=true);
-                          }
-                          translate ([7, 0, 1]) {
-                            rotate (a=90.0, v=[1, 0, 0]) {
-                              cylinder ($fn=30, h=2.75, r=1, center=true);
-                            }
-                          }
-                        }
-                      }
                     }
                     mirror ([0, 1, 0]) {
                       mirror ([1, 0, 0]) {
@@ -36,18 +24,6 @@ difference () {
                           }
                           translate ([7.75, 0, 1]) {
                             cube ([1.5, 17, 2], center=true);
-                          }
-                          translate ([0, 0, -2]) {
-                            hull () {
-                              translate ([7.75, 0, 2]) {
-                                cube ([1.5, 2.75, 4], center=true);
-                              }
-                              translate ([7, 0, 1]) {
-                                rotate (a=90.0, v=[1, 0, 0]) {
-                                  cylinder ($fn=30, h=2.75, r=1, center=true);
-                                }
-                              }
-                            }
                           }
                         }
                       }
@@ -93,18 +69,6 @@ difference () {
                       translate ([7.75, 0, 1]) {
                         cube ([1.5, 17, 2], center=true);
                       }
-                      translate ([0, 0, -2]) {
-                        hull () {
-                          translate ([7.75, 0, 2]) {
-                            cube ([1.5, 2.75, 4], center=true);
-                          }
-                          translate ([7, 0, 1]) {
-                            rotate (a=90.0, v=[1, 0, 0]) {
-                              cylinder ($fn=30, h=2.75, r=1, center=true);
-                            }
-                          }
-                        }
-                      }
                     }
                     mirror ([0, 1, 0]) {
                       mirror ([1, 0, 0]) {
@@ -114,18 +78,6 @@ difference () {
                           }
                           translate ([7.75, 0, 1]) {
                             cube ([1.5, 17, 2], center=true);
-                          }
-                          translate ([0, 0, -2]) {
-                            hull () {
-                              translate ([7.75, 0, 2]) {
-                                cube ([1.5, 2.75, 4], center=true);
-                              }
-                              translate ([7, 0, 1]) {
-                                rotate (a=90.0, v=[1, 0, 0]) {
-                                  cylinder ($fn=30, h=2.75, r=1, center=true);
-                                }
-                              }
-                            }
                           }
                         }
                       }
@@ -171,18 +123,6 @@ difference () {
                       translate ([7.75, 0, 1]) {
                         cube ([1.5, 17, 2], center=true);
                       }
-                      translate ([0, 0, -2]) {
-                        hull () {
-                          translate ([7.75, 0, 2]) {
-                            cube ([1.5, 2.75, 4], center=true);
-                          }
-                          translate ([7, 0, 1]) {
-                            rotate (a=90.0, v=[1, 0, 0]) {
-                              cylinder ($fn=30, h=2.75, r=1, center=true);
-                            }
-                          }
-                        }
-                      }
                     }
                     mirror ([0, 1, 0]) {
                       mirror ([1, 0, 0]) {
@@ -192,18 +132,6 @@ difference () {
                           }
                           translate ([7.75, 0, 1]) {
                             cube ([1.5, 17, 2], center=true);
-                          }
-                          translate ([0, 0, -2]) {
-                            hull () {
-                              translate ([7.75, 0, 2]) {
-                                cube ([1.5, 2.75, 4], center=true);
-                              }
-                              translate ([7, 0, 1]) {
-                                rotate (a=90.0, v=[1, 0, 0]) {
-                                  cylinder ($fn=30, h=2.75, r=1, center=true);
-                                }
-                              }
-                            }
                           }
                         }
                       }
